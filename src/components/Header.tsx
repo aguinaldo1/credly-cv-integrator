@@ -65,15 +65,15 @@ export const Header = () => {
         </div>
       </header>
 
-      {/* Botão Download CV Flutuante - Discreto */}
+      {/* Botão Download CV Flutuante - Azul, Transparente e Redondo */}
       <div className="fixed top-20 left-4 z-40">
         <a
           href="https://aguinaldo1.github.io/webcv/Curriculo/curriculo_aguinaldo.pdf"
           download
-          className="group inline-flex items-center space-x-2 bg-gray-800/80 text-white px-3 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 shadow-lg backdrop-blur-sm text-sm opacity-75 hover:opacity-100"
+          className="group flex items-center justify-center w-12 h-12 bg-blue-600/80 text-white rounded-full hover:bg-blue-700/90 transition-all duration-300 shadow-lg backdrop-blur-sm"
+          title="Download CV"
         >
-          <Download className="w-4 h-4 group-hover:animate-bounce" />
-          <span className="hidden sm:inline">CV</span>
+          <Download className="w-5 h-5 group-hover:animate-bounce" />
         </a>
       </div>
 

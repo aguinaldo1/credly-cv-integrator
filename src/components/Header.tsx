@@ -54,18 +54,6 @@ export const Header = () => {
               ))}
             </nav>
 
-            {/* Download CV Button */}
-            <div className="hidden md:flex items-center space-x-4">
-              <a
-                href="https://aguinaldo1.github.io/webcv/Curriculo/curriculo_aguinaldo.pdf"
-                download
-                className="inline-flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
-              >
-                <Download className="w-4 h-4" />
-                <span>Download CV</span>
-              </a>
-            </div>
-
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -76,6 +64,18 @@ export const Header = () => {
           </div>
         </div>
       </header>
+
+      {/* Botão Download CV Flutuante - Discreto */}
+      <div className="fixed top-20 left-4 z-40">
+        <a
+          href="https://aguinaldo1.github.io/webcv/Curriculo/curriculo_aguinaldo.pdf"
+          download
+          className="group inline-flex items-center space-x-2 bg-gray-800/80 text-white px-3 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 shadow-lg backdrop-blur-sm text-sm opacity-75 hover:opacity-100"
+        >
+          <Download className="w-4 h-4 group-hover:animate-bounce" />
+          <span className="hidden sm:inline">CV</span>
+        </a>
+      </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
